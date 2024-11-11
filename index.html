@@ -5,15 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando o JSONPlaceholder</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <h1>Usuários</h1>
+    <!-- requisição de quantos usuarios quer -->
+    <div>
+        <label for="numUsuarios">Número de usuários:</label>
+        <input type="number" id="numUsuarios" name="numUsuarios" min="1" max="10" value="1">
+    </div>
+   <!-- criação da tabela -->
     <div class="container" id="div" name="div">
-        <input type="text" name="userId" id="userId">
-        <input type="text" name="id" id="id">
-        <input type="text" name="title" id="title">
-        <input type="text" name="completed" id="completed">
+       
     </div>
     <input type="button" id="btn" name="btn" value="Enviar/Requisitar">
     <script src="js/script.js"></script>
